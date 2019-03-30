@@ -1,0 +1,79 @@
+<! Doctype html>
+<title>Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<body>
+<style>
+body{
+background-color:black;
+z-index:-9999;
+}
+</style>
+
+<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/thumb-1920-683179.jpg" style="width:100%">
+  <img class="mySlides" src="images/dark-souls-3-wallpaper-images-28.jpg" style="width:100%">
+  <img class="mySlides" src="images/Naruto-Anime-Wallpaper-77994888.jpg" style="width:100%">
+  <img class="mySlides" src="images/Gaara-Background-HD-Wallpapers-PIC-WSW1098161-1024x768.jpg" style="width:100%">
+   <img class="mySlides" src="images/1.jpg" style="width:100%">
+   <img class="mySlides" src="images/2.jpg" style="width:100%">
+	<img class="mySlides" src="images/3.jpg" style="width:100%">
+	 <img class="mySlides" src="images/4.jpg" style="width:100%">
+	  <img class="mySlides" src="images/5.jpg" style="width:100%">
+	   <img class="mySlides" src="images/6.jpg" style="width:100%">
+	    <img class="mySlides" src="images/7.jpg" style="width:100%">
+		 <img class="mySlides" src="images/8.jpg" style="width:100%">
+		  <img class="mySlides" src="images/9.jpg" style="width:100%">
+		   <img class="mySlides" src="images/10.png" style="width:100%">
+		    <img class="mySlides" src="images/11.jpg" style="width:100%">
+			 <img class="mySlides" src="images/12.jpg" style="width:100%">
+			  <img class="mySlides" src="images/13.jpg" style="width:100%">
+			   <img class="mySlides" src="images/14.jpg" style="width:100%">
+			    <img class="mySlides" src="images/15.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+
+
+</html>

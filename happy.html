@@ -1,0 +1,305 @@
+<! doctype html>
+	<head>
+		<title>
+			happy
+		</title>
+	 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+<!--	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	</head>
+	<body>
+<style>
+body{
+background:linear-gradient(to right, purple , blue);opacity:0.9;
+}
+.menudropdown1{
+width:80%;
+height:100px;
+margin:0px auto;
+
+}
+
+.menudropdown1 ul{
+ padding:0px;
+}
+
+.menudropdown1 ul li{
+ float:left;
+ background-color:black;
+ color:white;
+ width:200px;
+ height:50px;
+ line-height:50px;
+ font-size:25px;
+ text-align:center;
+ list-style:none;
+ opacity:0.6;
+}
+
+.menudropdown1 ul li ul{
+ display:none;
+}
+
+.menudropdown1 ul li:hover > ul{
+ display:block;
+}
+
+.menudropdown1 ul li:hover{
+ background-color:#32CD32;
+ opacity:0.9;
+}
+
+.menudropdown1 ul li ul li{
+ position:relative;
+}
+
+.menudropdown1 ul li ul li ul{
+ position:absolute;
+ left:200px;
+ top:0px;
+}
+.maincont2{
+position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: -325%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+.maincont,.maincont1{
+position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 152%;
+  transform: translate(-50%, -50%);
+
+}
+.maincontainer{
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard,.card,.card1,.card2{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.card:hover{
+	transform: rotateY(180deg);
+}
+
+.thecard:hover,.card1:hover,.card2:hover{
+  transform: rotateY(-180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-image:url("images/eye2.png");
+  background-position:center;
+  color: white;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.front,.front1,.front2{
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-image:url("images/clock-eye-new.jpg");
+  background-position:center;
+  color: white;
+
+
+}
+.back,.back1,.back2{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-image:url("images/eye1.jpg");
+  background-position:center;
+  color:white;
+  text-align: center;
+  transform: rotateY(180deg);
+
+}
+#front11{
+	background-image:url(images/cross.gif);
+	
+
+}
+#front12{
+	background-image:url(images/m2.gif);
+	
+
+}
+
+#back11{
+	background-image:url("images/circle.gif");
+}
+#back12{
+background-image:url("images/connect.gif");
+}
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-image:url("images/eye1.jpg");
+  background-position:center;
+  color:white;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1, .theback h1,.front h1,.back h1,.front h1,.back1 h1,.front2 h1,.back2 h2{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront p, .theback p,.front p,.back p,.front1 p,.back1 p,.front2 p,.back2 p{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+footer{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+
+}
+</style>
+		<h1>Happy Quotes</h1>
+			<div class="menudropdown1">
+	<ul>
+		<li> Main 
+		<ul>
+			<li> About-Us </li>
+		</ul>
+		</li>
+		<li> Quotes 
+		<ul>
+			<li>Happy </li>
+		<li> Moivational </li>
+	   <li> Loved </li>
+	   <li> Heart-Broken </li>
+	   <li> Anime Quotes 
+		<ul>
+		 <li> Naruto</li>
+		 <li> Legendary </li>
+		</ul>
+	   </li>
+	  </ul>
+	 </li>
+	 <li> Gallery </li>
+	 <li> Accessories </li>
+	 <li> Contact-Us </li>
+	</ul>
+</div>
+	<div class="maincontainer">
+
+		<div class="thecard">
+
+			<div class="thefront"><h1>See Through Deception</h1><p>This is the front of the card. It contains important information. Please see overleaf for more details.</p></div>
+
+			<div class="theback"><h1>We Are Waitiing</h1><p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p></div>
+		</div>
+	
+	<div class="maincont">
+
+      <div class="card">
+
+		<div class="front"><h1>Naruto</h1><p>This is the front of the card. It contains important information. Please see overleaf for more details.</p></div>
+
+		<div class="back"><h1>We Are Waitiing</h1><p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p></div>
+		</div>
+	
+	<div class="maincont1">
+
+      <div class="card1">
+
+			<div class="front1" id="front11"><h1>   Naruto</h1><p>This is the front of the card. It contains important information. Please see overleaf for more details.</p></div>
+
+			<div class="back1" id="back11"><h1>We Are Waitiing</h1><p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p></div>
+		</div>
+	
+	
+	<div class="maincont2">
+
+      <div class="card2">
+
+		<div class="front2" id="front12"><h1>   Naruto</h1><p>This is the front of the card. It contains important information. Please see overleaf for more details.</p></div>
+
+		<div class="back2" id="back12"><h1>We Are Waitiing</h1><p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p></div>
+		</div>
+	</div>
+	
+	
+	<section>
+	<div id="footer">
+		
+	</div>
+	</section>
+	
+	
+
+	</body>
+	
+</html>
+
+
+

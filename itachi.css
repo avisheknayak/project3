@@ -1,0 +1,60 @@
+//body{
+//	background-image: url('images/itachi.jpg');
+//	background-position:relative;
+//	top=0;
+//	bottom=0;
+//	height=100px;
+//	z-index=-10;
+//	background-attachment:scroll;
+//}
+body{
+	margin:0;
+	padding:0;
+}
+#box1{
+	height:100vh;
+	width:100%;
+	background-image:url('images/itachi.jpg');
+	background-size:cover;
+	display:table;
+	background-attachment:fixed;
+}
+#box2{
+	height:100vh;
+	width:100%;
+	background-image:url('images/itachi2.jpg');
+	background-size:cover;
+	display:table;
+	background-attachment:fixed;
+
+}
+#box3{
+	height:100vh;
+	width:100%;
+	background-image:url('images/itachi3.jpg');
+	background-size:cover;
+	display:table;
+	background-attachment:fixed;
+}
+.z{
+	
+	text-align:center;
+	font:bold;
+	font-family:cursive;
+	font-style:italic;
+	font-weight:bold;
+	//background-color:pink;
+	//border:5px solid red;
+	color:white;
+	text-shadow:5px 2px 4px red;
+	font-size:25px;
+	opacity:1;
+	margin:0px;
+}
+.b{
+	font-family:cursive;
+	font-weight:bold;
+	text-align:right;
+	z-index:10;
+	position:float;
+}
